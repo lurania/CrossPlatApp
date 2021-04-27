@@ -1,0 +1,251 @@
+@media screen and (max-width: 800px) and (min-width: 400px) {
+
+
+
+    .contentTable {
+        margin-left: auto;
+        margin-right: auto;
+
+
+
+
+    }
+
+    .checkButton {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: contain;
+
+
+
+    }
+
+    td {
+
+
+        margin: auto;
+        text-align: center;
+        font-weight: bold;
+
+
+    }
+
+
+    /* first child in table row*/
+    td:nth-child(1):not(.triesAndErrorStyle) {
+        background-color: rgb(144, 199, 212);
+        width: 10%;
+        border-style: solid;
+        border-color: black;
+        font-size: 12px;
+        overflow-wrap: break-word;
+
+    }
+
+    /* second child in table row */
+    td:nth-child(2):not(.triesAndErrorStyle) {
+        background-color: rgb(151, 209, 187);
+        width: 10%;
+        border-style: dotted;
+        border-color: black;
+        font-size: 12px;
+        overflow-wrap: break-word;
+
+
+
+    }
+
+    td:nth-child(3) {
+        background-color: rgb(224, 204, 115);
+        width: 2%;
+        border-style: solid;
+        border-color: black;
+        font-size: 12px;
+
+
+
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .contentTable {
+        margin-left: auto;
+        margin-right: auto;
+
+
+
+    }
+
+    .checkButton {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: contain;
+        max-width: 50px;
+
+
+    }
+
+    td {
+
+
+        margin: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+
+    /* first child in table row*/
+    td:nth-child(1):not(.triesAndErrorStyle) {
+        background-color: rgb(144, 199, 212);
+        width: 50%;
+        border-style: solid;
+        border-color: black;
+        font-size: medium;
+
+    }
+
+    /* second child in table row */
+    td:nth-child(2):not(.triesAndErrorStyle) {
+        background-color: rgb(151, 209, 187);
+        width: 50%;
+        border-style: dotted;
+        border-color: black;
+        font-size: medium;
+
+
+
+    }
+
+    td:nth-child(3) {
+        background-color: rgb(224, 204, 115);
+        width: 100%;
+        border-style: solid;
+        border-color: black;
+        font-size: medium;
+
+
+
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+
+
+    .contentTable {
+        margin-left: auto;
+        margin-right: auto;
+
+
+
+
+    }
+
+    .checkButton {
+        width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: contain;
+        min-width: 15px;
+
+    }
+
+    td {
+
+        font-weight: bold;
+        margin: auto;
+        text-align: center;
+
+    }
+
+
+    /* first child in table row*/
+    td:nth-child(1):not(.triesAndErrorStyle) {
+        background-color: rgb(144, 199, 212);
+        width: 45%;
+        border-style: solid;
+        border-color: black;
+        font-size: 8px;
+        overflow-wrap: break-word;
+
+    }
+
+    /* second child in table row */
+    td:nth-child(2):not(.triesAndErrorStyle) {
+        background-color: rgb(151, 209, 187);
+        width: 45%;
+        border-style: dotted;
+        border-color: black;
+        font-size: 8px;
+        overflow-wrap: break-word;
+
+
+
+    }
+
+    td:nth-child(3) {
+        background-color: rgb(224, 204, 115);
+        width: 10%;
+        border-style: solid;
+        border-color: black;
+        font-size: 8px;
+
+
+
+    }
+
+
+
+
+
+}
+
+
+.allContent {
+
+    background-color: rgb(248, 250, 227);
+
+}
+
+.triesAndErrorStyle {
+
+    background-color: rgb(173, 226, 123);
+    width: 100;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1em;
+
+}
+
+
+.endScreen{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+
+
+}
+
+
+.playAgainButton{
+    margin-left: auto;
+    margin-right: auto;
+}
