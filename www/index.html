@@ -31,23 +31,34 @@
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' https://upload.wikimedia.org data: content:;">
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
-    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="themes/myTheme.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css">
     <link rel="stylesheet" type="text/css" href="css/mycss.css">
+
     <!--<link rel="stylesheet" href="css/index.css"> -->
     <title>Language Learning App</title>
 </head>
 
 <body>
     <div class="app">
-        <div data-role="page">
+        <div data-role="page" data-title="Game"  data-theme="a" class="mainPage">
             <div data-role="header">
-                <h1>Language Learning App</h1>
-                <a href="" data-icon="gear" class="ui-btn-right">Options</a>
+                <div>
+                    <div><img src="./img/SwapItLearnItIcon.png" class="swapItIcon"></div>
+                </div>
+                <a href="#" id="optionButton" data-icon="gear" class="ui-btn-right">Options</a>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li><a href="#" id="gameButton" data-icon="star" class="ui-btn-active">Game</a></li>
+                        <li><a href="" id="statsButton" data-icon="eye">Stats</a></li>
+                    </ul>
+                </div><!-- /navbar -->
             </div>
             <div data-role="content" id="deviceready" class="allContent">
                 <div>
@@ -62,15 +73,16 @@
                 <div id="tableDiv">
                 </div>
             </div>
+
         </div>
-        <div data-role="footer">
-            <h3>Foot</h3>
+        <div data-role="footer" data-theme="a">
         </div>
     </div>
     </div>
-    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="cordova.js"></script>
+    
     <script type="module" src="js/index.js"></script>
     <script type="module" src="js/vocabData.js"></script>
 </body>

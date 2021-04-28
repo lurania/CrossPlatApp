@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+	<link rel="stylesheet" href="themes/myTheme.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mycss.css">
+    <script src="js/options.js"></script>
+    <!--<link rel="stylesheet" href="css/index.css"> -->
+    <title>Options</title>
+</head>
+
+<body>
+    <div data-role="page" class="mainPage">
+        <div data-role="header">
+            <img src="./img/SwapItLearnItIcon.png" class="swapItIcon">
+            <div id="custom-border-radius">
+                <a href="" id="backToGameButton"
+                    class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-right backButton">No
+                    text</a>
+            </div>
+        </div>
+        <div data-role="content" class="allContent">
+            <div class="options">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <legend class="optionText">Languages:</legend>
+                    <label for="Lang1">Language 1</label>
+                    <select name="Lang1" id="lang1" data-native-menu="false" data-mini="true">
+                        <option value="english">English</option>
+                        <option value="german">German</option>
+                        <option value="spanish">Spanish</option>
+                    </select>
+                    <label for="Lang2">Language 2</label>
+                    <select name="Lang2" id="lang2" data-native-menu="false" data-mini="true">
+                        <option value="german">German</option>
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                    </select>
+                </fieldset>
+
+                <div class="ui-field-contain sliderOption">
+                    <legend class="optionText">Amount of words:</legend>
+                    <input type="range" name="slider" id="slider" min="3" max="12" value="3" data-highlight="true">
+                </div>
+                <div align="right">
+                        <a href="#" id="submitOptionButton" data-role="button" data-mini="true" data-inline="true"
+                            data-icon="check">Confirm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="cordova.js"></script>
+    
+    <script src="js/options.js"></script>
+
+</body>
+
+</html>
