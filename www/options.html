@@ -36,8 +36,8 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
-	<link rel="stylesheet" href="themes/myTheme.min.css" />
-	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="themes/myTheme.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css">
     <link rel="stylesheet" type="text/css" href="css/mycss.css">
     <script src="js/options.js"></script>
@@ -51,8 +51,7 @@
             <img src="./img/SwapItLearnItIcon.png" class="swapItIcon">
             <div id="custom-border-radius">
                 <a href="" id="backToGameButton"
-                    class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-right backButton">No
-                    text</a>
+                    class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-right backButton"></a>
             </div>
         </div>
         <div data-role="content" class="allContent">
@@ -64,12 +63,14 @@
                         <option value="english">English</option>
                         <option value="german">German</option>
                         <option value="spanish">Spanish</option>
+                        <option value="custom">Custom</option>
                     </select>
                     <label for="Lang2">Language 2</label>
                     <select name="Lang2" id="lang2" data-native-menu="false" data-mini="true">
                         <option value="german">German</option>
                         <option value="english">English</option>
                         <option value="spanish">Spanish</option>
+                        <option value="custom">Custom</option>
                     </select>
                 </fieldset>
 
@@ -77,17 +78,82 @@
                     <legend class="optionText">Amount of words:</legend>
                     <input type="range" name="slider" id="slider" min="3" max="12" value="3" data-highlight="true">
                 </div>
+                <form>
+                    <div class="ui-field-contain">
+                        <legend class="optionText">Save my game statistic:</legend>
+                        <select name="statsToggle" id="statsToggle" data-role="flipswitch">
+                            <option value="off">Off</option>
+                            <option value="on">On</option>
+                        </select>
+                    </div>
+                </form>
+                <a href="#addVocabPopup" id="addMoreVocab" class="addMoreVocabButton" data-inline="true"
+                    data-role="button" data-icon="plus" data-mini="true" data-rel="popup" data-position-to="window">Add
+                </a>
+                <a href="#popupVocab" id="removeVocab" class="addMoreVocabButton" data-inline="true" data-role="button"
+                    data-icon="minus" data-mini="true" data-rel="popup" data-position-to="window">Delete
+                </a>
+                <div data-role="popup" id="addVocabPopup" class="ui-content" data-theme="a">
+                    <p>Add a pair of new vocabulary.</p>
+                    <input type="text" placeholder="Vocab of Language 1" id="inputLang1">
+                    <input type="text" placeholder="Vocab of Language 2" id="inputLang2">
+                    <div align="right">
+                        <a href="#" id="vocabAdd" data-role="button" data-mini="true" data-inline="true"
+                            data-icon="check" data-rel="popup" data-position-to="window">Add</a>
+                    </div>
+                    <div data-role="popup" id="confirmVocabAdd" class="ui-content" data-theme="a">
+                        <p>Vocabulary added successfully</p>
+                    </div>
+
+                </div>
+
                 <div align="right">
-                        <a href="#" id="submitOptionButton" data-role="button" data-mini="true" data-inline="true"
-                            data-icon="check">Confirm</a>
+                    <a href="#confirmOption" id="submitOptionButton" data-role="button" data-mini="true"
+                        data-inline="true" data-icon="check" data-rel="popup" data-position-to="window">Confirm</a>
+                </div>
+                <div data-role="popup" id="confirmOption" class="ui-content" data-theme="a">
+                    <p>Changes applied successfully.</p>
+                </div>
+
+
+
+            </div>
+
+
+            <div data-role="popup" id="popupVocab" class="ui-corner-all">
+                <div class="noDisplay" id="noDisplay">
+                    <p class="dateStyle"> No vocabulary data to show....</p>
+                </div>
+                <div class="languageDivStyle" id="statsDiv">
+
+                    <div class="deleteButton">
+                        <a class="center" href="#" id="delete" data-icon="forbidden" data-iconpos="notext"
+                            data-role="button"></a>
+                    </div>
+
+                    <div class="statsHolder">
+                        <p id="language1" class="languageDisplay"></p>
+                        <p id="language2" class="languageDisplay"></p>
+                    </div>
+                    <div class="languageNextArrow">
+                        <a class="center" href="#" id="next" data-iconpos="notext" data-role="button"
+                            data-icon="arrow-l"></a>
+                    </div>
+                    <div class="languageBackArrow">
+                        <a class="center" href="#" id="previous" data-iconpos="notext" data-role="button"
+                            data-icon="arrow-r"></a>
+                    </div>
                 </div>
             </div>
+
+
         </div>
+    </div>
     </div>
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="cordova.js"></script>
-    
+
     <script src="js/options.js"></script>
 
 </body>

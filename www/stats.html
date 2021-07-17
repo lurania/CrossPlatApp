@@ -36,8 +36,8 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
-	<link rel="stylesheet" href="themes/myTheme.min.css" />
-	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="themes/myTheme.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css">
     <link rel="stylesheet" type="text/css" href="css/mycss.css">
     <!--<link rel="stylesheet" href="css/index.css"> -->
@@ -53,11 +53,51 @@
                 <div data-role="navbar" data-iconpos="left">
                     <ul>
                         <li><a href="#" id="gameButton" data-icon="star">Game</a></li>
-                        <li><a href="#" class="ui-btn-active"  data-icon="eye">Stats</a></li>
+                        <li><a href="#" class="ui-btn-active" data-icon="eye">Stats</a></li>
                     </ul>
                 </div><!-- /navbar -->
             </div>
-            <div data-role="content"  class="allContent">
+            <div data-role="content" class="allContent">
+
+                <div class="noDisplay" id="noDisplay">
+                    <p class="dateStyle"> No stats to show....</p>
+                </div>
+                <div class="statsDivStyle" id="statsDiv">
+                    <div class="deleteAllButton">
+                        <a class="deleteAllStyle" data-position-to="window" data-rel="popup" href="#popupDialog"
+                            data-mini="true" data-role="button" data-icon="forbidden">All</a>
+                    </div>
+                    <div class="deleteButton">
+                        <a class="center" href="#" id="delete" data-iconpos="notext" data-role="button"
+                            data-icon="forbidden"></a>
+                    </div>
+
+                    <div class="statsHolder">
+                        <p id="date" class="dateStyle"></p>
+                        <p id="words" class="wordsStyle"></p>
+                        <p id="tries" class="triesStyle"></p>
+                        <p id="errors" class="errorStyle"></p>
+                        <p id="percent" class="wordsStyle"></p>
+                    </div>
+                    <div class="nextButton">
+                        <a class="center" href="#" id="next" data-iconpos="notext" data-role="button"
+                            data-icon="arrow-l"></a>
+                    </div>
+                    <div class="previousButton">
+                        <a class="center" href="#" id="previous" data-iconpos="notext" data-role="button"
+                            data-icon="arrow-r"></a>
+                    </div>
+                </div>
+                <div data-role="popup" id="popupDialog" data-dismissible="false">
+                    <div role="main" class="ui-content">
+                        <h3 class="ui-title">Delete all statistic?</h3>
+                        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
+                            data-rel="back">Cancel</a>
+                        <a href="#" id="deleteAll" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
+                            data-rel="back">Delete</a>
+                    </div>
+                </div>
+
 
             </div>
 
@@ -69,7 +109,7 @@
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="cordova.js"></script>
-    
+
     <script src="js/stats.js"></script>
 </body>
 

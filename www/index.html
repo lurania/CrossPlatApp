@@ -36,8 +36,8 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
-	<link rel="stylesheet" href="themes/myTheme.min.css" />
-	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="themes/myTheme.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css">
     <link rel="stylesheet" type="text/css" href="css/mycss.css">
 
@@ -47,7 +47,7 @@
 
 <body>
     <div class="app">
-        <div data-role="page" data-title="Game"  data-theme="a" class="mainPage">
+        <div data-role="page" data-title="Game" data-theme="a" class="mainPage">
             <div data-role="header">
                 <div>
                     <div><img src="./img/SwapItLearnItIcon.png" class="swapItIcon"></div>
@@ -72,6 +72,38 @@
                 </div>
                 <div id="tableDiv">
                 </div>
+                <div data-role="popup" id="popupConfig" class="ui-corner-all" data-dismissible="false">
+                    <form>
+                        <div class="configDiv">
+
+                            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                                <legend class="optionTextDark">Languages:</legend>
+                                <label for="Lang1">Language 1</label>
+                                <select name="Lang1" id="lang1" data-native-menu="false" data-mini="true">
+                                    <option value="english">English</option>
+                                    <option value="german">German</option>
+                                    <option value="spanish">Spanish</option>
+                                </select>
+                                <label for="Lang2">Language 2</label>
+                                <select name="Lang2" id="lang2" data-native-menu="false" data-mini="true">
+                                    <option value="german">German</option>
+                                    <option value="english">English</option>
+                                    <option value="spanish">Spanish</option>
+                                </select>
+                            </fieldset>
+
+                            <div class="ui-field-contain sliderOption">
+                                <legend class="optionTextDark">Amount of words:</legend>
+                                <input type="range" name="slider" id="slider" min="3" max="12" value="3"
+                                    data-highlight="true">
+                            </div>
+                            <div align="right">
+                                <a href="#positionWindow" id="submitConfig" data-role="button" data-mini="true"
+                                    data-inline="true" data-icon="check" data-rel="popup"
+                                    data-position-to="window">Confirm</a>
+                            </div>
+                    </form>
+                </div>
             </div>
 
         </div>
@@ -82,7 +114,7 @@
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="cordova.js"></script>
-    
+
     <script type="module" src="js/index.js"></script>
     <script type="module" src="js/vocabData.js"></script>
 </body>
