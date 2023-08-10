@@ -11,3 +11,6 @@ The options include to save game statistic and add custom vocabulary.
 ![2](https://github.com/lurania/CrossPlatApp/assets/68773319/177fdb05-72c7-4abd-a86a-322639f65c3c)
 ![3](https://github.com/lurania/CrossPlatApp/assets/68773319/7beaaf96-83d7-4f80-a8f7-b0653b0910df)
 
+
+Cordova is licensed under: http://www.apache.org/licenses/LICENSE-2.0
+
