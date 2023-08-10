@@ -5,12 +5,13 @@ Drag the vocabulary in the right column to the correct pair of the left column a
 the checkmark to see if you are right.
 The options include to save game statistic and add custom vocabulary.
 
+![1](https://github.com/lurania/CrossPlatApp/assets/68773319/8d32f91b-5f21-474b-9f74-c7ea197aa22e)
 
-![1](https://github.com/lurania/CrossPlatApp/assets/68773319/e28e5b11-9d93-433a-9427-de60d82d2330)
-![4](https://github.com/lurania/CrossPlatApp/assets/68773319/f62b1899-c14e-46db-93ee-3b4d69fbb31e)
-![2](https://github.com/lurania/CrossPlatApp/assets/68773319/177fdb05-72c7-4abd-a86a-322639f65c3c)
-![3](https://github.com/lurania/CrossPlatApp/assets/68773319/7beaaf96-83d7-4f80-a8f7-b0653b0910df)
+![4](https://github.com/lurania/CrossPlatApp/assets/68773319/1e92fec5-8888-4d2a-a07a-1aa449cd9fc2)
 
+![2](https://github.com/lurania/CrossPlatApp/assets/68773319/81542468-36b6-45ba-b51c-429f9dbd42e9)
+
+![3](https://github.com/lurania/CrossPlatApp/assets/68773319/459d7410-38c1-4f45-9109-f0648e626962)
 
 Cordova is licensed under: http://www.apache.org/licenses/LICENSE-2.0
 
